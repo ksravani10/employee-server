@@ -6,7 +6,7 @@ if (!cached) {
   cached = global.mongoose = { conn: null, promise: null };
 }
 
-const connectToDatabase = async () => {
+export const connectToDatabase = async () => {
   if (cached.conn) return cached.conn;
 
   if (!cached.promise) {
@@ -19,7 +19,6 @@ const connectToDatabase = async () => {
   }
 
   cached.conn = await cached.promise;
+  console.log("✅ MongoDB connected successfully (serverless)");
   return cached.conn;
 };
-
-export default connectToDatabase;
