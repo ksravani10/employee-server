@@ -16,7 +16,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "https://employee-frontend-tau-drab.vercel.app",
+    origin: "https://employee-frontend-tau-drab.vercel.app/",
     credentials: true
 }));
 app.use(express.json());
