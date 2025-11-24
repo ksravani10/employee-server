@@ -161,7 +161,6 @@ const fetchEmployeesByDepId = async (req, res) => {
 
 export {
   addEmployee,
-  upload,
   getEmployees,
   getEmployee,
   updateEmployee,
