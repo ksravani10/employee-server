@@ -42,7 +42,7 @@ app.use('/api/setting', settingRouter);
 app.use('/api/dashboard', dashboardRouter);
 
 // Static files
-app.use(express.static('public/uploads'));
+app.use('/uploads', express.static('public/uploads'));
 
 // Export app for Vercel
 export default app;
